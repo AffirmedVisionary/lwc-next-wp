@@ -13,7 +13,7 @@ jobs:
           node-version: 12
       - run: npm install -g yarn
       - run: yarn install --frozen-lockfile
-      - run: WP_URL=${{ secrets.WP_URL }} yarn build
+      - run: WP_URL=${{ secrets.WP_URL }} yarn out
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
