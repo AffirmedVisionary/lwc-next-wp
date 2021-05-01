@@ -9,7 +9,7 @@ export default function Home() {
 
 
         <Heading as="h1" size="4xl" >
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Testing the firebase preview/merge
         </Heading>
 
         <Text fontSize="md">
