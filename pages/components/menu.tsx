@@ -15,6 +15,7 @@ import {
   useBreakpointValue,
   useDisclosure,
   Image,
+  LinkBox,
 } from '@chakra-ui/react'
 import {
   HamburgerIcon,
@@ -64,11 +65,10 @@ export default function WithSubnavigation() {
             fontWeight={600}
             color={'white'}
             bg={'yellow.400'}
-            href={'/contact'}
             _hover={{
               bg: 'yellow.300',
             }}
-            onClick={() => router.push('/contact')}
+            onClick={(e) => { e.preventDefault(), router.push('/contact') }}
           >
             Get Quote
           </Button>
@@ -78,13 +78,14 @@ export default function WithSubnavigation() {
           </Flex>
         </Flex>
 
+        <LinkBox onClick={(e) => {e.preventDefault(), router.push('/')}}>
         <Image
             boxSize='50px'
             objectFit='cover'
             src='https://lawfullywhite.com/api/wp-content/uploads/2021/04/logo-sq-circle.jpg'
-          alt='Lawfully White Construction Ltd'
-          onClick={() => router.push('/')}
+          alt='Lawfully White Construction Ltd'         
           />
+          </LinkBox>
 
 
       </Flex>
@@ -107,7 +108,7 @@ const DesktopNav = () => {
             <PopoverTrigger>
               <Link
                 p={2}
-                onClick={() => router.push(`${navItem.href}`)}
+                onClick={(e) => { e.preventDefault(), router.push(`${navItem.href}`) }}
                 fontSize={'sm'}
                 fontWeight={500}
                 color={useColorModeValue('gray.600', 'gray.200')}
@@ -147,7 +148,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   const router = useRouter()
   return (
     <Link
-    onClick={() => router.push(`${href}`)}
+      onClick={(e) => { e.preventDefault(), router.push(`${href}`) }}
     role={'group'}
       display={'block'}
       p={2}
@@ -197,13 +198,13 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure()
-
+  const router = useRouter()
   return (
     <Stack spacing={4} onClick={children && onToggle}>
       <Flex
         py={2}
         as={Link}
-        href={href ?? '#'}
+        onClick={(e) => { e.preventDefault(), router.push(`${href}`) }}
         justify={'space-between'}
         align={'center'}
         _hover={{
@@ -238,7 +239,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link key={child.label} py={2} onClick={(e) => { e.preventDefault(), router.push(`${child.href}`) }}  >
                 {child.label}
               </Link>
             ))}
@@ -258,6 +259,7 @@ interface NavItem {
 const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'About',
+    href: '/about',
     children: [
       {
         label: 'About Us',
@@ -293,12 +295,12 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Explore Design Work',
         subLabel: 'Trending Design to inspire you',
-        href: '#',
+        href: '/about',
       },
       {
         label: 'New & Noteworthy',
         subLabel: 'Up-and-coming Designers',
-        href: '#',
+        href: '/about',
       },
     ],
   },
