@@ -4,7 +4,7 @@ import Layout from './components/layout'
 
 const Services = () => {
   return (
-    <Layout title='Services || Lawfully White Construction Ltd'>
+    <Layout title='Services'>
       <Heading as="h1" size="4xl">This is the Services Page</Heading>
     </Layout>
   )

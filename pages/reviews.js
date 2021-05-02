@@ -4,7 +4,7 @@ import Layout from './components/layout'
 
 const Reviews = () => {
   return (
-      <Layout title='Reviews || Lawfully White Construction Ltd'>
+      <Layout title='Reviews'>
       <Heading as="h1" size="4xl">This is the Reviews Page</Heading>
     </Layout>
   )

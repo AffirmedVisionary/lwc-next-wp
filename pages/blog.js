@@ -1,10 +1,12 @@
 import fetcher from '../lib/fetcher'
 import { ALL_POSTS } from '../lib/wordpress/api'
 import Link from 'next/link'
+import Layout from './components/layout'
 
 const blog = ({ allPosts }) => {
   const posts = allPosts
   return (
+    <Layout title='The Blog'>
     <div className='container'>
       <main className='main'>
         <div className='grid'>
@@ -22,7 +24,8 @@ const blog = ({ allPosts }) => {
           })}
         </div>
       </main>
-    </div>
+      </div>
+      </Layout>
   )
 }
 
