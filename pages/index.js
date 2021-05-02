@@ -3,12 +3,11 @@ import Card from './components/card'
 import Layout from './components/layout'
 
 import { chakra } from '@chakra-ui/react'
-import Hero from './components/hero'
 
 // heroImg, heroHeading, heroIntro, heroButtons
 const heading = (
   <Heading as='h1' size='4xl'>
-    Testing the firebase preview/merge
+    Welcome, to Lawfully White Construction Ltd
   </Heading>
 )
 
@@ -27,15 +26,12 @@ const heroButtons = [
 
 export default function Home() {
   return (
-    <Layout>
-      <Hero
-        heroImg='https://picsum.photos/200/300'
-        heroHeading={heading}
-        heroIntro='Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.'
-        heroButtons={heroButtons}
-      />
+    <Layout 
+    heroHeading={heading}
+    heroIntro='Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
+            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
+            fugiat aliqua.'
+    heroButtons={heroButtons}>
 
       <Text fontSize='md'>
         Get started by editing <Code>pages/index.js</Code>
