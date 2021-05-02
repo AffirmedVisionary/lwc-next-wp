@@ -3,6 +3,7 @@
 // Sample card from Airbnb
 
 import { Badge, Box } from "@chakra-ui/layout"
+import Link from "next/link"
 
 
 
@@ -10,12 +11,14 @@ import { Badge, Box } from "@chakra-ui/layout"
 function Card({title, paragraph, href, badge='New Post'}) {
   
     return (
-      <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden"  href={href} d="flex" alignItems="baseline">
-            <Box p="6">
+      <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden"  d="flex" alignItems="baseline">
+        <Box p="6">
+          
+          <a href={href}>
                 <Badge borderRadius="full" px="2" colorScheme="teal">
               {badge}
                 </Badge>
-                
+                </a>
             <Box
               color="gray.500"
               fontWeight="semibold"
