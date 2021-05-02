@@ -6,10 +6,12 @@ import { chakra } from '@chakra-ui/react'
 
 // heroImg, heroHeading, heroIntro, heroButtons
 const heading = (
-  <Heading as='h1' size='4xl'>
-    Welcome, to Lawfully White Construction Ltd
+  <Heading as='h1' size='4xl' className="animate__animated animate__bounce">
+    <chakra.h1 color='black'>Lawfully White</chakra.h1>
+    <chakra.h1 color='white'> Construction Ltd</chakra.h1>
   </Heading>
 )
+
 
 const heroButtons = [
   {

@@ -42,14 +42,16 @@ const Layout = ({
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <header>
+      <WithSubnavigation />
+
         <Box
                   pos='relative'
                   overflow='hidden'
                   backgroundImage={`url(${heroImg})`}
                   bgPos='center'
-                  bgSize='cover'
+          bgSize='cover'
+          mb={10}
         >
-      <WithSubnavigation />
             <Box
         >
 

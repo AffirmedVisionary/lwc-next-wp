@@ -136,3 +136,27 @@ a {
     flex-direction: column;
   }
 }
+
+
+.video-header {
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10
+}
+
+  .viewport-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+  }
+
+#front-title-lw {
+  color: useColorModeValue('gray.900', 'white')
+}
+
+#front-title {
+  color: useColorModeValue('white', 'gray.900')
+}
