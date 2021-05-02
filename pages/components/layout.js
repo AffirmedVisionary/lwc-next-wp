@@ -85,7 +85,7 @@ const Layout = ({
                     letterSpacing='tight'
                     lineHeight='short'
                     fontWeight='extrabold'
-                    color={useColorModeValue('gray.900', 'white')}
+                    color={useColorModeValue('black', 'white')}
                   >
                     {heroTitle}
                   </Heading>
@@ -94,7 +94,7 @@ const Layout = ({
                     mx={{ sm: 'auto', lg: 0 }}
                     mb={6}
                     fontSize={{ base: 'lg', md: 'xl' }}
-                    color={useColorModeValue('gray.900', 'white')}
+                    color={useColorModeValue('black', 'white')}
                     lineHeight='base'
                   >
                     {heroIntro}
@@ -105,7 +105,8 @@ const Layout = ({
                     spacing={{ base: 4, md: 2 }}
                     justifyContent='center'
                   >
-                    {heroButtons.map((button) => {
+                      {heroButtons.map((button) => {
+                      const router = useRouter()
                       return (
                         <Box rounded='full' shadow='md' key={button.id}>
                           <Link
@@ -117,11 +118,11 @@ const Layout = ({
                             border='solid 1px transparent'
                             fontSize={{ base: 'md', md: 'lg' }}
                             rounded='md'
-                            color={useColorModeValue('white', 'gray.900')}
-                            bg={useColorModeValue('gray.900', 'white')}
+                            color={useColorModeValue('white', 'black')}
+                            bg={useColorModeValue('black', 'white')}
                             _hover={{
-                              bg: useColorModeValue('white', 'gray.900'),
-                              color: useColorModeValue('gray.900', 'white'),
+                              color: useColorModeValue('black', 'white'),
+                              bg: useColorModeValue('#ffde59', 'black'),
                             }}
                             px={{ base: 8, md: 10 }}
                             py={{ base: 3, md: 4 }}

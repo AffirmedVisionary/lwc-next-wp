@@ -32,8 +32,8 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
+        bg={useColorModeValue('white', 'black')}
+        color={useColorModeValue('black', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -63,10 +63,11 @@ export default function WithSubnavigation() {
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
             fontWeight={600}
-            color={'white'}
-            bg={'yellow.400'}
+            color={'black'}
+            bg={'#ffde59'}
             _hover={{
-              bg: 'yellow.300',
+              bg: 'black',
+              color: '#ffde59'
             }}
             onClick={(e) => { e.preventDefault(), router.push('/contact') }}
           >
@@ -257,6 +258,10 @@ interface NavItem {
 }
 
 const NAV_ITEMS: Array<NavItem> = [
+  {
+    label: 'Home',
+    href: '/',
+  },
   {
     label: 'About',
     href: '/about',
