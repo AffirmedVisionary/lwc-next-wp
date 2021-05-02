@@ -1,11 +1,9 @@
-import { Button } from '@chakra-ui/button'
 import { useColorModeValue } from '@chakra-ui/color-mode'
-import { chakra } from '@chakra-ui/react'
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/layout'
 import React from 'react'
 import { useRouter } from 'next/router'
 
-const Hero = ({ heroImg, heroHeading, heroIntro, heroButtons }) => {
+const Hero = ({ heroImg, heroHeading, heroIntro }) => {
   const router = useRouter()
   return (
     <>
@@ -61,11 +59,9 @@ const Hero = ({ heroImg, heroHeading, heroIntro, heroButtons }) => {
                   spacing={{ base: 4, md: 2 }}
                   justifyContent='center'
                 >
-                  {heroButtons.map((button) => {
-                    return (
-                      <Box rounded='full' shadow='md' key={button.id}>
+                      <Box rounded='full' shadow='md' >
                         <Link
-                          onClick={() => router.push(`${button.href}`)}
+                          onClick={() => router.push(`/contact`)}
                           w='full'
                           display='flex'
                           alignItems='center'
@@ -79,11 +75,9 @@ const Hero = ({ heroImg, heroHeading, heroIntro, heroButtons }) => {
                           px={{ base: 8, md: 10 }}
                           py={{ base: 3, md: 4 }}
                         >
-                          {button.label}
+                          Label
                         </Link>
                       </Box>
-                    )
-                  })}
                 </Stack>
               </Box>
             </Box>
