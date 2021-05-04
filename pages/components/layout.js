@@ -12,6 +12,7 @@ import { useColorModeValue } from '@chakra-ui/color-mode'
 import Head from 'next/head'
 import React from 'react'
 import WithSubnavigation from './menu'
+import LargeWithNewsletter from './footer'
 import { useRouter } from 'next/router'
 
 const Layout = ({
@@ -145,18 +146,7 @@ const Layout = ({
       </header>
       <Box>{children}</Box>
       <Divider />
-      <footer>
-        <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Powered by{' '}
-          <span className='logo'>
-            <Image src='/vercel.svg' alt='Vercel Logo' width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+    <LargeWithNewsletter />
     </Container>
   )
 }
