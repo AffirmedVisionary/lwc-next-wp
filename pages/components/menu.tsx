@@ -298,9 +298,9 @@ const NAV_ITEMS: Array<NavItem> = [
     label: 'Inspiration',
     children: [
       {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '/about',
+        label: 'Practice',
+        subLabel: 'Typescript component practice',
+        href: '/practice-run',
       },
       {
         label: 'New & Noteworthy',
