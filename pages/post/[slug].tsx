@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import Loading from '../components/loading'
 import { Box } from '@chakra-ui/layout';
 import { render } from 'react-dom'
+import FourohFour from '../404'
 
 const post = ({postData}) => {
     const blogPost = postData.data.post
@@ -24,17 +25,16 @@ const post = ({postData}) => {
   ]
 
     if (!router.isFallback && !blogPost?.slug) {
-      return <ErrorPage statusCode={404} />;
+      return <FourohFour />;
     }
     return (
       <div>
         {router.isFallback ? (
           <>
-          <PostTitle>Loading…</PostTitle>
             <Loading />
             </>
             ) : (
-            <Layout title={blogPost.title} heroImg={cover} heroIntro={' Enjoy what you read? start the conversation, leave a comment... '} heroButtons={heroButtons}>
+            <Layout title={blogPost.title} heroHeading={blogPost.title} heroImg={cover} heroIntro={' Enjoy what you read? start the conversation, leave a comment... '} heroButtons={heroButtons}>
               <Box id='post' style={{minHeight: '100vh'}}>
                 <Box dangerouslySetInnerHTML={{ __html: blogPost.content }} />
                 </Box>

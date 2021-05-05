@@ -4,7 +4,7 @@ import Layout from './components/layout'
 
 const About = () => {
   return (
-    <Layout title='About Us'>
+    <Layout title='About Us' heroHeading='About Us'>
       <Heading as="h1" size="4xl">This is the About Page</Heading>
     </Layout>
   )

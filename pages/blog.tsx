@@ -8,7 +8,7 @@ import { useRouter } from 'next/router'
 const blog = ({ allPosts }) => {
   const posts = allPosts
   return (
-    <Layout title='The Blog'>
+    <Layout title='The Blog' heroHeading='Our Blog'>
         <main className='main'>
         <SimpleGrid columns={3} spacing={10}>
           {
@@ -86,4 +86,5 @@ export async function getStaticProps() {
     revalidate: 1,
   }
 }
+
 

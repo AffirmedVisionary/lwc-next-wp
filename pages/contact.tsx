@@ -4,7 +4,7 @@ import Layout from './components/layout'
 
 const Contact = () => {
   return (
-    <Layout title='Contact Us'>
+    <Layout title='Contact Us' heroHeading='Get In Touch'>
       <Heading as="h1" size="4xl">This is the contact page</Heading>
     </Layout>
   )
