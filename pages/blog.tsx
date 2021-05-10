@@ -1,7 +1,7 @@
 import fetcher from '../lib/fetcher'
 import { ALL_POSTS } from '../lib/wordpress/api'
 import Layout from './components/layout'
-import { chakra, Box, useColorModeValue, Badge, Link, SimpleGrid, Center } from '@chakra-ui/react'
+import { chakra, Box, useColorModeValue, Badge, Link, SimpleGrid, Center, Container } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 
@@ -9,7 +9,6 @@ const blog = ({ allPosts }) => {
   const posts = allPosts
   return (
     <Layout title='The Blog' heroHeading='Our Blog'>
-        <main className='main'>
         <SimpleGrid columns={3} spacing={10}>
           {
   posts.map((post) => {
@@ -19,7 +18,8 @@ const blog = ({ allPosts }) => {
       : post.featuredImage.node.sourceUrl
     return (
       < Center
-          height='300px'
+        height='300px'
+        width='300px'
           bg={useColorModeValue('white', 'gray.800')}
           mx={{ lg: 8 }}
           display={{ lg: 'flex' }}
@@ -70,7 +70,6 @@ const blog = ({ allPosts }) => {
 
 
           </SimpleGrid>
-        </main>
     </Layout>
   )
 }

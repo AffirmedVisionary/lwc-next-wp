@@ -273,7 +273,7 @@ const NAV_ITEMS: Array<NavItem> = [
       },
       {
         label: 'Services',
-        href: '/services',
+        href: '/construction-services-birmingham',
       },
       {
         label: 'Digital Footprint',
@@ -303,9 +303,9 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/practice-run',
       },
       {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '/about',
+        label: 'Gallery',
+        subLabel: 'On site and inspirational image gallery',
+        href: '/gallery',
       },
     ],
   },

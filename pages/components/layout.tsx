@@ -51,7 +51,6 @@ const Layout = ({
                   backgroundImage={`url(${heroImg})`}
                   bgPos='center'
           bgSize='cover'
-          mb={10}
         >
             <Box
         >
@@ -144,7 +143,7 @@ const Layout = ({
             
           </Box>
       </header>
-      <Box>{children}</Box>
+      <Container Container className='main' maxW={'5xl'} py={12}>{children}</Container>
       <Divider />
     <LargeWithNewsletter />
     </Container>

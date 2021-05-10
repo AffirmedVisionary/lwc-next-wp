@@ -1,8 +1,13 @@
-import { Text } from '@chakra-ui/layout'
+import { SimpleGrid, Text } from '@chakra-ui/layout'
 import Layout from './components/layout'
 import CTA from './practice/2col-cta'
+import servicesArray from '../lib/data/services.json'
+import FeatureGrid from './components/feature1'
+import { Image } from '@chakra-ui/image'
+import Gallery from './gallery'
 
 const Practice = () => {
+  const services = servicesArray
     return (
         <Layout 
         heroHeading={'PRACTICE runs'}
@@ -13,7 +18,24 @@ const Practice = () => {
             <CTA SectionTitle={'Ready to start that project?'}
     SectionTag={'Book a quote now!'} 
     SectionText={'Speak to our friendly and highly courtious sales team and get closer to your dream space'}
-                ButtonLabel={'Book A Quote'} ButtonLink='/contact' />
+          ButtonLabel={'Book A Quote'} ButtonLink='/contact' />
+        
+        <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign='center'>
+        {services.map((service) => {
+          const iconName = `{${service.icon}}`
+            return (
+              <FeatureGrid title={service.service} text={service.shortDescription} aligned='center'>
+                <Image
+          borderRadius="full"
+          boxSize="50px"
+          src={service.imageSrc}
+          alt={service.imageAlt}
+                />
+              </FeatureGrid>
+        )})}
+        </SimpleGrid>
+        <br />
+        <Gallery />
       </Layout>
     )
   }
