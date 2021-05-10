@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "pages/components/dgTools.js"  ],
   "exclude": [
     "node_modules"
   ]

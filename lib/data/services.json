@@ -1,0 +1,74 @@
+[
+     {
+        "number": "1",
+        "service": "Home Extensions",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "FaHammer",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "2",
+        "service": "Loft Conversions",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "3",
+        "service": "Landscaping",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "4",
+        "service": "House Maintenance",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "5",
+        "service": "Trade Specific Tasks",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "6",
+        "service": "White Goods",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "7",
+        "service": "Plastering",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    },
+    {
+        "number": "8",
+        "service": "Roofing",
+        "shortDescription": "Short Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore...",
+        "icon": "{FaHammer}",
+        "imageSrc": "https://bit.ly/sage-adebayo",
+        "imageAlt": "Segun Adebayo",
+        "longDescription": "Long Desc - Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+    }
+]
