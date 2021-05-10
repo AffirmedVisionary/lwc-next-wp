@@ -1,4 +1,3 @@
-import React from 'react'
 import { chakra, Box, Stack, Image, Flex } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { useRouter } from 'next/router'
@@ -31,7 +30,7 @@ const CTA = ({
         w={{ base: 'full', md: 11 / 12, xl: 9 / 12 }}
         mx='auto'
         pr={{ md: 20 }}
-      >
+        >
         <chakra.h2
           fontSize={{ base: '3xl', sm: '4xl' }}
           fontWeight='extrabold'
