@@ -1,10 +1,6 @@
 import Layout from './components/layout'
-import CTA from './practice/2col-cta'
-import servicesArray from '../lib/data/services.json'
-import FeatureGrid from './components/feature1'
 import { chakra } from '@chakra-ui/react'
 import {
-  Container,
   SimpleGrid,
   Image,
   Flex,
@@ -20,7 +16,8 @@ import {
   IoLogoBitcoin,
   IoSearchSharp,
 } from 'react-icons/io5';
-import { ReactElement } from 'react';
+import ThreeColumnsServices from './components/servicesGrid'
+import IconBullets from './components/iconBullets'
 
 // heroImg, heroHeading, heroIntro, heroButtons
 const heading = (
@@ -78,19 +75,19 @@ export default function Home() {
                 borderColor={useColorModeValue('gray.100', 'gray.700')}
               />
             }>
-            <Feature
+            <IconBullets
               icon={
                 <Icon as={IoAnalyticsSharp} color={'yellow.500'} w={5} h={5} />
               }
               iconBg={useColorModeValue('yellow.100', 'yellow.900')}
               text={'Talented tradespersons'}
             />
-            <Feature
+            <IconBullets
               icon={<Icon as={IoLogoBitcoin} color={'yellow.500'} w={5} h={5} />}
               iconBg={useColorModeValue('yellow.100', 'yellow.900')}
               text={'Proffesional workflows'}
             />
-            <Feature
+            <IconBullets
               icon={
                 <Icon as={IoSearchSharp} color={'yellow.500'} w={5} h={5} />
               }
@@ -110,63 +107,8 @@ export default function Home() {
         </Flex>
       </SimpleGrid>
 
-            <SimpleThreeColumns />
+      <ThreeColumnsServices />
 
     </Layout>
   )
-}
-
-interface FeatureProps {
-  text: string;
-  iconBg: string;
-  icon?: ReactElement;
-}
-
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
-  return (
-    <Stack direction={'row'} align={'center'}>
-      <Flex
-        w={8}
-        h={8}
-        align={'center'}
-        justify={'center'}
-        rounded={'full'}
-        bg={iconBg}>
-        {icon}
-      </Flex>
-      <Text fontWeight={600}>{text}</Text>
-    </Stack>
-  );
-};
-
-
-export function SimpleThreeColumns() {
-  const services = servicesArray
-
-  return (
-    <Container maxW={'5xl'} p={4} mt={6}>
-        <Heading mb={4} textAlign='center'>Our Services</Heading>
-  <Text fontSize="xl" mb={4} textAlign='center'>Here at Lawfully White we pride ourselves in executing challenges with remarkable precision</Text>
-
-  <SimpleGrid columns={{ base: 1, md: 3 }} spacing={10} textAlign='center'>
-        {services.map((service) => {
-          const iconName = `{${service.icon}}`
-            return (
-              <FeatureGrid title={service.service} text={service.shortDescription} aligned='center'>
-                <Image
-          borderRadius="full"
-          boxSize="50px"
-          src={service.imageSrc}
-          alt={service.imageAlt}
-                />
-              </FeatureGrid>
-        )})}
-</SimpleGrid>
-      <CTA SectionTitle={'Ready to start that project?'}
-    SectionTag={'Book a quote now!'} 
-    SectionText={'Speak to our friendly and highly courtious sales team and get closer to your dream space'}
-                ButtonLabel={'Book A Quote'} ButtonLink='/contact' />
-
-    </Container>
-  );
 }
