@@ -43,6 +43,7 @@ import { useState } from 'react'
     }
   
     return (
+      <>
       <Stack spacing={2}>
         <FormControl>
           <Input
@@ -92,6 +93,9 @@ import { useState } from 'react'
         <Button variant='outline' size='md' onClick={handleSubmit}>
           Submit
         </Button>
-      </Stack>
+        </Stack>
+        </>
     )
-  }
+}
+  
+export default ContactForm
