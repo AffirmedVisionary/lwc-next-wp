@@ -1,7 +1,7 @@
 import fetcher from '../lib/fetcher'
 import { ALL_POSTS } from '../lib/wordpress/api'
 import Layout from './components/layout'
-import { chakra, Box, useColorModeValue, Badge, Link, SimpleGrid, Center } from '@chakra-ui/react'
+import { chakra, Box, useColorModeValue, Link, SimpleGrid, Center } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 
 
@@ -61,12 +61,12 @@ const blog = ({ allPosts }) => {
               </Link>
             </Box>
 
-            </Box>  
-        </ Center>  
-        
+            </Box>
+        </ Center>
+
 
      )})}
-  
+
 
 
           </SimpleGrid>

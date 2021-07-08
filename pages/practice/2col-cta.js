@@ -3,21 +3,13 @@ import { chakra, Box, Stack, Image, Flex } from '@chakra-ui/react'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { useRouter } from 'next/router'
 
-interface CTAprops {
-  SectionTitle: string
-  SectionTag: string
-  SectionText: string
-  ButtonLabel: string
-  ButtonLink: string
-}
-
 const CTA = ({
   SectionTitle,
   SectionTag,
   SectionText,
   ButtonLabel,
   ButtonLink,
-}: CTAprops) => {
+}) => {
   const router = useRouter()
   return (
     <Flex

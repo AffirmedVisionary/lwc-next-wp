@@ -1,5 +1,4 @@
 import { Container, Flex, Heading, SimpleGrid, Stack, Text } from '@chakra-ui/layout'
-import React, { ReactElement } from 'react'
 import Layout from './components/layout'
 
 const Services = () => {
@@ -16,13 +15,7 @@ import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 import Icon from '@chakra-ui/icon'
 import CTA from './practice/2col-cta'
 
-interface FeatureProps1 {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
-
-export const Feature1 = ({ title, text, icon }: FeatureProps1) => {
+export const Feature1 = ({ title, text, icon }) => {
   return (
     <Stack>
       <Flex
@@ -107,7 +100,7 @@ export function SimpleThreeColumns() {
         />
       </SimpleGrid>
       <CTA SectionTitle={'Ready to start that project?'}
-    SectionTag={'Book a quote now!'} 
+    SectionTag={'Book a quote now!'}
     SectionText={'Speak to our friendly and highly courtious sales team and get closer to your dream space'}
                 ButtonLabel={'Book A Quote'} ButtonLink='/contact' />
 

@@ -12,7 +12,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
   LinkBox,
@@ -58,7 +57,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-              
+
         <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'sm'}
@@ -84,7 +83,7 @@ export default function WithSubnavigation() {
             boxSize='50px'
             objectFit='cover'
             src='https://lawfullywhite.com/api/wp-content/uploads/2021/04/logo-sq-circle.jpg'
-          alt='Lawfully White Construction Ltd'         
+          alt='Lawfully White Construction Ltd'
           />
           </LinkBox>
 
@@ -101,7 +100,7 @@ export default function WithSubnavigation() {
 const DesktopNav = () => {
   const router = useRouter()
   return (
-    <Stack direction={'row'} spacing={4} 
+    <Stack direction={'row'} spacing={4}
     >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label} style={{display: 'flex', alignContent: 'center'}}>
@@ -145,7 +144,7 @@ const DesktopNav = () => {
   )
 }
 
-const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({ label, href, subLabel }) => {
   const router = useRouter()
   return (
     <Link
@@ -197,7 +196,7 @@ const MobileNav = () => {
   )
 }
 
-const MobileNavItem = ({ label, children, href }: NavItem) => {
+const MobileNavItem = ({ label, children, href }) => {
   const { isOpen, onToggle } = useDisclosure()
   const router = useRouter()
   return (
@@ -250,14 +249,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   )
 }
 
-interface NavItem {
-  label: string
-  subLabel?: string
-  children?: Array<NavItem>
-  href?: string
-}
-
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS = [
   {
     label: 'Home',
     href: '/',

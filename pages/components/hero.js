@@ -1,6 +1,5 @@
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import { Box, Heading, Link, Stack, Text } from '@chakra-ui/layout'
-import React from 'react'
 import { useRouter } from 'next/router'
 
 const Hero = ({ heroImg, heroHeading, heroIntro }) => {

@@ -11,12 +11,11 @@ import {
     IconButton,
     useColorModeValue,
   } from '@chakra-ui/react';
-  import { ReactNode } from 'react';
-  import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
   import { BiMailSend } from 'react-icons/bi';
 import { useRouter } from 'next/router';
-  
-  const Logo = (props: any) => {
+
+  const Logo = (props) => {
     return (
       <svg
         height={32}
@@ -34,15 +33,11 @@ import { useRouter } from 'next/router';
       </svg>
     );
   };
-  
+
   const SocialButton = ({
     children,
     label,
     href,
-  }: {
-    children: ReactNode;
-    label: string;
-    href: string;
   }) => {
     return (
       <chakra.button
@@ -65,15 +60,15 @@ import { useRouter } from 'next/router';
       </chakra.button>
     );
   };
-  
-  const ListHeader = ({ children }: { children: ReactNode }) => {
+
+  const ListHeader = ({ children }) => {
     return (
       <Text fontWeight={'500'} fontSize={'lg'} mb={2}>
         {children}
       </Text>
     );
   };
-  
+
   export default function LargeWithNewsletter() {
       const router = useRouter()
       return (

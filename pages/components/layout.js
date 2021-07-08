@@ -10,7 +10,6 @@ import {
 } from '@chakra-ui/layout'
 import { useColorModeValue } from '@chakra-ui/color-mode'
 import Head from 'next/head'
-import React from 'react'
 import WithSubnavigation from './menu'
 import LargeWithNewsletter from './footer'
 import { useRouter } from 'next/router'
@@ -141,7 +140,7 @@ const Layout = ({
             </Box>
           </Box>
             </Box>
-            
+
           </Box>
       </header>
       <Box>{children}</Box>

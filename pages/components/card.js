@@ -1,19 +1,11 @@
-
-
-// Sample card from Airbnb
-
 import { Badge, Box } from "@chakra-ui/layout"
-import Link from "next/link"
-
-
-
 
 function Card({title, paragraph, href, badge='New Post'}) {
-  
+
     return (
       <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden"  d="flex" alignItems="baseline">
         <Box p="6">
-          
+
           <a href={href}>
                 <Badge borderRadius="full" px="2" colorScheme="teal">
               {badge}
@@ -30,7 +22,7 @@ function Card({title, paragraph, href, badge='New Post'}) {
               {title}
                 </Box>
                 </Box>
-                
+
           <Box
             mt="1"
             fontWeight="semibold"
@@ -39,9 +31,9 @@ function Card({title, paragraph, href, badge='New Post'}) {
           >
             {paragraph}
                 </Box>
-                 
+
       </Box>
     )
 }
-  
+
 export default Card

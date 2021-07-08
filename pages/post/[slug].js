@@ -4,7 +4,6 @@ import { useRouter } from 'next/router'
 import Layout from '../components/layout'
 import Loading from '../components/loading'
 import { Box } from '@chakra-ui/layout';
-import { render } from 'react-dom'
 
 const post = ({postData}) => {
     const blogPost = postData.data.post

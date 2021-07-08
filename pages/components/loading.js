@@ -1,6 +1,5 @@
 import { Heading } from '@chakra-ui/layout'
 import { Spinner } from '@chakra-ui/spinner'
-import React from 'react'
 
 const Loading = () => {
   return (

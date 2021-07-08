@@ -18,7 +18,6 @@ import {
   IoLogoBitcoin,
   IoSearchSharp,
 } from 'react-icons/io5';
-import { ReactElement } from 'react';
 
 // heroImg, heroHeading, heroIntro, heroButtons
 const heading = (
@@ -44,7 +43,7 @@ const heroButtons = [
 
 export default function Home() {
   return (
-    <Layout 
+    <Layout
     heroHeading={heading}
     heroIntro='Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
@@ -116,13 +115,8 @@ export default function Home() {
   )
 }
 
-interface FeatureProps {
-  text: string;
-  iconBg: string;
-  icon?: ReactElement;
-}
 
-const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+const Feature = ({ text, icon, iconBg }) => {
   return (
     <Stack direction={'row'} align={'center'}>
       <Flex
@@ -141,13 +135,7 @@ const Feature = ({ text, icon, iconBg }: FeatureProps) => {
 
 import { FcAssistant, FcDonate, FcInTransit } from 'react-icons/fc';
 
-interface FeatureProps1 {
-  title: string;
-  text: string;
-  icon: ReactElement;
-}
-
-export const Feature1 = ({ title, text, icon }: FeatureProps1) => {
+export const Feature1 = ({ title, text, icon }) => {
   return (
     <Stack>
       <Flex
@@ -232,7 +220,7 @@ export function SimpleThreeColumns() {
         />
       </SimpleGrid>
       <CTA SectionTitle={'Ready to start that project?'}
-    SectionTag={'Book a quote now!'} 
+    SectionTag={'Book a quote now!'}
     SectionText={'Speak to our friendly and highly courtious sales team and get closer to your dream space'}
                 ButtonLabel={'Book A Quote'} ButtonLink='/contact' />
 
