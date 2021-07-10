@@ -6,7 +6,6 @@ module.exports = {
     node: true,
     browser: true,
   },
-  ignorePatterns: ["functions/**/*.js"],
   rules: {
     "prettier/prettier": "error",
     // suppress errors for missing 'import React' in files
